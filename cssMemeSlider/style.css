@@ -112,6 +112,34 @@ input[type=radio] {
   background-color: #465562;
 }
 
+/* Controls States */
+
+.bullet:hover .bullet-item {
+  background-color: #fff;;
+}
+
+#slide1:checked ~ #labels #controls label:nth-child(1) div, 
+#slide2:checked ~ #labels #controls label:nth-child(2) div, 
+#slide3:checked ~ #labels #controls label:nth-child(3) div, 
+#slide4:checked ~ #labels #controls label:nth-child(4) div {
+  background-color: transparent;
+  border: 0.1em solid #465562;;
+}
+
+#slide1:checked ~ #labels #controls label:nth-child(1):hover div, 
+#slide2:checked ~ #labels #controls label:nth-child(2):hover div, 
+#slide3:checked ~ #labels #controls label:nth-child(3):hover div, 
+#slide4:checked ~ #labels #controls label:nth-child(4):hover div {
+  border-color: #fff;;
+}
+
+#slide1:active ~ #labels #controls label:nth-child(1) div, 
+#slide2:active ~ #labels #controls label:nth-child(2) div, 
+#slide3:active ~ #labels #controls label:nth-child(3) div, 
+#slide4:active ~ #labels #controls label:nth-child(4) div {
+  background-color: #89a3ba;
+}
+
 /* Animation slides */
 
 #slide1:checked ~ #slider .slider-content {
