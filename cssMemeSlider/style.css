@@ -35,6 +35,9 @@ input[type=radio] {
 
 .slider {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .slider-wrapper {
@@ -65,8 +68,6 @@ input[type=radio] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0 0;
-
 }
 
 .overflow {
@@ -84,6 +85,7 @@ input[type=radio] {
 .slider-label {
   display: block;
   width: 100%;
+  line-height: 1.6em;
 }
 
 .slider-labels span {
@@ -199,6 +201,10 @@ input[type=radio] {
 }
 
 @media (max-width: 768px) {
+  .slider {
+    width: 80%;
+  }
+
   .sidebar_wrapper {
     flex-direction: column-reverse;
     gap: 1em;
